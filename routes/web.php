@@ -17,6 +17,8 @@ Route::get('/tag/{slug}', 'HomeController@tag')->name('tag.show');
 Route::get('/category/{slug}', 'HomeController@category')->name('category.show');
 Route::post('/subscribe' , 'SubsController@subscribe');
 Route::get('/verify/{token}' , 'SubsController@verify');
+Route::get('/about' , 'HomeController@about');
+Route::get('/contact' , 'HomeController@contact');
 
 
 

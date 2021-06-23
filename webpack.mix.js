@@ -54,9 +54,6 @@ mix.styles([
 	'resources/assets/front/css/responsive.css'
 ],'public/css/front.css');
 
-mix.styles([
-	'resources/assets/front/css/dark_style.css'
-],'public/css/dark_front.css' );
 
 mix.scripts([
 	'resources/assets/front/js/jquery-1.11.3.min.js',

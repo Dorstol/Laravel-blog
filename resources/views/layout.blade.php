@@ -8,15 +8,14 @@
     <!-- favicon icon -->
 
     <title>Blog</title>
-    
-    
-    <link rel="stylesheet" href="css/front.css" id='theme'>
-    
+
+    <!-- common css -->
+    <link rel="stylesheet" href="/css/front.css">
 
     <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="/js/html5shiv.js"></script>
-    <script src="/js/respond.js"></script>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.js"></script>
     <![endif]-->
 
     <!-- Favicon -->
@@ -38,27 +37,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/"><img src="https://fanart.tv/api/download.php?type=download&image=31695&section=3" height='50px' style='margin-top:-8px;' alt=""></a>
             </div>
 
-            
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav text-uppercase">
                     <li><a href="/">Homepage</a></li>
-                    <li><a href="/about">About me </a></li>
-                    <li><a href="/contacts">Contacts</a></li>
+                    <li><a href="/about">ABOUT ME </a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav text-uppercase pull-right">
-                    @if(Auth::check())
-                        <li><a href="/profile">My profile</a></li>
-                        <li><a href="/logout">Logout</a></li>
-                    @else
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
-                    @endif
+                @if(Auth::check())
+                    <li><a href="/profile">My profile</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                @else
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                @endif
                     
                 </ul>
 
@@ -77,18 +75,19 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            @if(session('status'))
-                <div class="alert alert-info">
-            {{session('status')}}
-                 </div>
-            @endif
-        </div>
-    </div>
-</div>
-@yield('content')
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+               @if(session('status'))
+                    <div class="alert alert-info">
+                        {{session('status')}}
+                    </div>
+                @endif
+           </div>
+       </div>
+   </div>
+	@yield('content')
+
 <!--footer start-->
 <div id="footer">
     <div class="footer-instagram-section">
@@ -252,7 +251,6 @@
     </div>
 </footer>
 <!-- js files -->
-<script src='/js/front.js'></script>
-
+<script src="/js/front.js"></script>
 </body>
 </html>

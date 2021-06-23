@@ -3526,34 +3526,6 @@ body {
     background: #F4F4F4;
 }
 
-:root {
-    --font-color: #424242;
-    --bg-color: #fff;
-}
-
-[data-theme="dark"] {
-    --font-color: #fff;
-    --bg-color: #161625;
-}
-
-/*slider switch css */
-
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    top:2rem;
-    position: relative;
-    width: 60px;
-  }
-
-  .theme-switch input {
-    display:none;
-  }
-
-  .moonboi{font-size: 1rem;transition: .4s;}
-  .moonboi::before{transition: .4s;}
-
-
 span, p, input {
     font-family: 'Merriweather', serif;
     line-height: 26px;
