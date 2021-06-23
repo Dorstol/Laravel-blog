@@ -41,7 +41,7 @@
                 <a class="navbar-brand" href="/"><img src="/images/logo.png" alt=""></a>
             </div>
 
-            <button id="switch">Switch Theme</button>
+            
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -253,22 +253,6 @@
 </footer>
 <!-- js files -->
 <script src='/js/front.js'></script>
-
-<script>
-    document.getElementById('switch').onclick = function() {
-
-        if(document.getElementById('theme').href == "css/dark_front.css")
-        {
-            document.getElementById('theme').href = "css/front.css"
-            console.log
-        }
-        else
-        {
-            document.getElementById('theme').href = "css/dark_front.css"
-        }
-
-};
-</script>
 
 </body>
 </html>
