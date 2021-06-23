@@ -1,0 +1,1 @@
+<a href="http://blog/verify/{{$subs->token}}">{{$subs->token}}</a>
